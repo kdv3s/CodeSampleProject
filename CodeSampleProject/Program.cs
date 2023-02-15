@@ -43,8 +43,6 @@
     string[] words;
     Console.WriteLine("Enter the name of a text file");
     file_name_input = Console.ReadLine();
-    if (file_name_input.Substring(-4) != ".txt")
-      file_name_input = file_name_input + ".txt";
     StreamReader stream = new StreamReader(file_name_input);
     line = stream.ReadLine();
     words = line.Split(' ');
